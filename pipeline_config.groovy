@@ -9,3 +9,11 @@
 libraries{
   maven
 }
+
+stages{
+    continuous_integration{
+        unit_test
+        static_code_analysis
+        build
+    }
+}
